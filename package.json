@@ -1,0 +1,15 @@
+{
+  "name": "puppeteerbot",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "First basic bot using puppeteer package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mol",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^18.0.4"
+  }
+}
