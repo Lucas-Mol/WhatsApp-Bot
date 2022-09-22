@@ -37,7 +37,7 @@ As configurações acima devem ser feitas antes da execução do código no arqu
 Execute os 2 seguintes códigos no terminal dentro da pasta do Projeto:
 
 ```
-npm i 
+npm install 
 node index.js
 ```
 
