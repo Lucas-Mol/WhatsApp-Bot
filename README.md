@@ -36,7 +36,7 @@ If you're in Windows, just open the **whatsappbot.bat**
 
 WhatsApp Bot save your last submit in **config.json**
 
-I **do not** recommend to manually write this file, except the
+I **do not** recommend to manually write this file, except ... TODO
 
 |     Variáveis      |  Tipo   |                                            Descrição                                            |                                            Observações                                             |
 | :----------------: | :-----: | :---------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
