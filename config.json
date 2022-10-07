@@ -1,0 +1,11 @@
+{
+    "CONTACT": "Me",
+    "MESSAGE_OR_FILE": false,
+    "AMOUNT_OF_MESSAGES": "10",
+    "MESSAGE": "Hi, I'm WhatsApp Bot, Welcome! :)",
+    "DELAY_TO_SEND": "850",
+    "FILE_PATH": ".\\transcript.txt",
+    "BROWSER_PATH": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+    "USER_DATA_PATH": "%userprofile%\\AppData\\Local\\Google\\Chrome\\User Data\\AllowCookies",
+    "FIRST_RUN": false
+}

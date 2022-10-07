@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>WhatsApp Bot</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="loader">
+                <span></span><span></span><span></span>
+            </div>
+            <header class="header">
+                <h1>WhatsApp Bot</h1>
+                <div class="chat-ballon"></div>               
+                <p>Hi, I'm WhatsApp Bot, Welcome!</p>
+            </header>
+            <form name="mainForm">
+                <fieldset class="main-fieldset">
+                    <div class="contact-switch-box">
+                        <label for="contact-name-input">Contact name:</label>
+                        <input id="contact-name-input" type="text" required="true">
+                        <div class=".switch-box">
+                            <label class="switch">
+                                <input id="message-or-file-checkbox" type="checkbox">
+                                <span class="slider"/>
+                            </label>
+                            <label id="message-or-file-label" for="message-or-file-checkbox"></label>
+                        </div>
+                    </div>
+                    <section class="message-section">
+                        <fieldset>
+                            <label class=".la" for="amount-of-message-input">Amount of Messages</label>
+                            <input id="amount-of-message-input" type="number">
+                            <label for="message-input">Message</label>
+                            <input id="message-input" type="text">
+                        </fieldset>
+                    </section>
+                    <section class="file-section">
+                        <fieldset>
+                            <label id="file-label" class="file-label" for="file-text-area-input"><strong>Path: </strong></label>
+                            <textarea id="file-text-area-input" rows="5"></textarea>
+                        </fieldset>
+                    </section>
+                    <footer class="footer">
+                        <div class="delay-box">
+                            <label for="delay-input">Message delay:</label>
+                            <input id="delay-input" type="number" min="750" max="2000" required="true">
+                        </div>
+                        <input id="submit-button"  type="submit" value="Send">
+                    </footer>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="./home-script.js"></script>
+</html>

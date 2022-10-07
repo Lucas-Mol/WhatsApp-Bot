@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Readex+Pro:wght@200&family=Red+Hat+Mono:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #CEE1DE;
+    font-weight: 600;
+}
+
+body {
+    background-color: #1D2431;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    background-image: url('./images/background.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+
+.wrapper {
+    height: 580px;
+    width: 550px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    opacity: 1;
+}
+
+.header {
+    display: block;
+    width: 500px;
+}
+
+.header h1 {
+    background: linear-gradient(to right bottom, #075E54 0%, #CEE1DE 20%, #CEE1DE 70%, #075E54 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-left: 18%;
+    margin-bottom: 18px;
+    font-size: 58px;
+}
+
+.chat-ballon {
+    position: absolute;
+    top: 18%;
+    left: 28.5%;
+    border-radius: 15px 15px 15px 2px;   
+    height: 29px;
+    width: 272px;
+    background-color: white;
+    opacity: 1;
+}
+
+.header p {
+    position: relative;
+    margin-top: 8%;
+    margin-left: 12%;
+    color: #1D2431;
+    display: flex;
+}
+
+.header p:before {
+    content: url('./images/bot-icon.png');
+    padding: 0 5px 0 0;
+    vertical-align: auto;
+}
+
+fieldset {
+    border: 0.1px solid black;
+    border-radius: 8px;
+}
+
+.main-fieldset {
+    height: 360px;
+    padding: 5px;
+    background: rgba(40, 48, 61, 0.97)
+}
+
+.switch-box {
+    display: flex; 
+    width: 150px;
+    align-items: center;
+}
+
+.contact-switch-box {
+    padding: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin: 10px 10px 10px 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #128C7E;
+    -webkit-transition: .4s;
+    border-radius: 34px;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    border-radius: 50%;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #075E54; 
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #075E54;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+section fieldset {
+    background: rgba(51, 60, 75, 0.95);
+    padding: 10px;
+    width: 80vw;
+    height: 150px;
+}
+
+.file-section {
+    display: none;
+}
+
+.file-label {
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+}
+
+.file-label strong {
+    font-weight: 900;
+}
+
+#file-text-area-input::-webkit-scrollbar {
+    width: 6px;
+}
+
+#file-text-area-input::-webkit-scrollbar-track {
+    display: none;
+}
+
+#file-text-area-input::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #1d2431da;
+}
+
+.message-section label {
+    display: block;
+}
+
+.message-section input {
+    display: block;
+    margin: 10px 0 0 20px;
+    padding-left: 10px;
+}
+
+input {
+    margin: 10px 0 0 20px;
+    padding-left: 10px;
+    height: 30px;
+    width: 500px;
+}
+
+textarea:invalid, input:invalid {
+    animation: shake .3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(4px); }
+    50% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+input, textarea {
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right,#045F46 55%, #04523d 90%);
+    color: #CEE1DE;
+    font-family: 'Red Hat Mono', sans-serif;
+}
+
+textarea {
+    height: 100px;
+    width: 92%;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    margin: 5px 0 0 20px;
+    resize: none;
+}
+
+input[type="number"] {
+    width: 65px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: none;
+}
+
+.main-fieldset input[type="submit"] {
+    padding-left: 0;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    box-shadow: 2px 2px #000011;
+    border: 1px solid #000011;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+}
+
+.main-fieldset input[type="submit"]:hover {
+    animation: buttonJump .9s infinite;
+}
+
+@keyframes buttonJump {
+    20%{
+        margin-top: 4px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        box-shadow: 0 0 #000011;
+    }
+    40%{
+        margin-top: 2px;
+        margin-bottom: 4px;
+        box-shadow: 2px 2px #000011;
+    }
+    60%{
+        margin-top: 4px;
+        margin-bottom: 2px;
+        margin-left: 2px;  
+        box-shadow: 0 0 #000011;
+    }
+    100%{
+        margin-top: 2px;
+        margin-bottom: 4px;
+        box-shadow: 2px 2px #000011;
+    }
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delay-box {
+    display: flex;
+    width: 250px;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    display: none;
+    width: 700px;
+    height: 700px;
+    padding: 55% 57%;
+    top: -12%;
+    left: -11%;
+    background-color: #075e54ce;
+}
+
+.loader span {
+    display: inline-block;
+    background-color: #1D2431;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin-left: 0 10px;
+    transform: translate3d(10px, 0, 0);
+    animation: bounce .6s infinite alternate;
+}
+
+.loader span:nth-child(2) {
+    background-color: #273041;
+    animation-delay: .1s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+@keyframes bounce {
+    to {
+        height: 12px;
+        width: 12px;
+        transform: translate3d(0, -10px, 0);
+    }
+}
