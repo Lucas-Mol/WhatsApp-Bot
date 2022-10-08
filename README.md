@@ -2,11 +2,11 @@
 
 WhatsApp Bot is a simple bot project to send repeated messages or a entire text script to your friends on WhatsApp.
 
-**Version 2.0:** WhatsApp version 2.0 received a Graphic Interface, allowing to Users interact with no code expertise.
+**Version 2.0:** WhatsApp version 2.0 received a Graphic Interface, allowing Users with no coding expertise interact to.
 
 ## Intro
 
-I made this project to enjoy into the world of Bot's creations and at intention of avocation, although in some specific cases it can be useful to automate some process.
+I made this project to enjoy into the world of Bot's creations and to have fun, although in some specific cases it can be useful to automate some process.
 
 It also ended up being a good practice of build a project from scratch with Node.JS (and using Electron JS too).
 
@@ -21,6 +21,8 @@ It also ended up being a good practice of build a project from scratch with Node
 ![WhatsApp Access](https://cdn.discordapp.com/attachments/778788148921761822/1028062421358747678/unknown.png)
 
 ## How to run the project?
+
+**Require:** **Node** installed
 
 Run the following 2 codes in the terminal inside the Project folder:
 
@@ -50,7 +52,7 @@ I **do not** recommend to manually write this file, except ... TODO
 |   USER_DATA_PATH   | String  |                          O caminho da pasta de cookies do seu Browser                           |        **Default** está o caminho onde a maioria dos cookies de Chrome estão no SO Windows.        |
 |   FIRST_RUN   | Boolean  |                          Indicate to bot the first run                           |                |
 
-## Tecnologias Utilizadas
+## Tech Stack
 
 Node.JS
 
