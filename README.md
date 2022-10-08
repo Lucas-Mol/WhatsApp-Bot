@@ -10,6 +10,9 @@ I made this project to enjoy into the world of Bot's creations and to have fun, 
 
 It also ended up being a good practice of build a project from scratch with Node.JS (and using Electron JS too).
 
+**OBS:** The WhatsAppBot changes his sentences randomly after each completed run (After complete the job, 
+make sure to close the browser)
+
 ## Overview
 
 ![Home](https://cdn.discordapp.com/attachments/778788148921761822/1028061901801918544/unknown.png)
@@ -38,19 +41,18 @@ If you're in Windows, just open the **whatsappbot.bat**
 
 WhatsApp Bot save your last submit in **config.json**
 
-I **do not** recommend to manually write this file, except ... TODO
-
-|     Variáveis      |  Tipo   |                                            Descrição                                            |                                            Observações                                             |
+I **do not** recommend to manually write this file, except to resolve the Error: TODO
+Variables      |  Type   |                                            Description                                            |                                            Observations                                             |
 | :----------------: | :-----: | :---------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-|      CONTACT       | String  |                                        O nome do Contato                                        | Evite nomes com Emoticons<br/>(se necessário, inspecione<br/>o elemento e copie como está no HTML) |
-|  MESSAGE_OR_FILE   | Boolean |  Se 'false' irá enviar repetição da mensagem<br/>Se 'true' irá enviar linha por linha do texto  |                                                ---                                                 |
-| AMOUNT_OF_MESSAGES | Number  |                             Número de Mensagens que serão enviadas                              |                  Aplicará **somente** quando MESSAGE_OR_FILE<br/>estiver 'false'                   |
-|      MESSAGE       | String  |                                    Mensagem que será enviada                                    |                  Aplicará  **somente** quando MESSAGE_OR_FILE<br/>estiver 'false'                  |
-|     FILE_PATH      | String  | O caminho do arquivo .txt (deve haver<br/>quebras de linha para enviar em diferentes mensagens) |             **Recomendo** usar o arquivo já existente<br/> e só alterar o seu conteúdo             |
-|   DELAY_TO_SEND    | Number  |                           Tamanho do Delay entre as mensagens em 'ms'                           |                                   Será aplicado a todos os casos                                   |
-|    BROWSER_PATH    | String  |                         O caminho do executável do seu Browser Favorito                         |              **Default** está o caminho onde a maioria dos Chrome estão no SO Windows              |
-|   USER_DATA_PATH   | String  |                          O caminho da pasta de cookies do seu Browser                           |        **Default** está o caminho onde a maioria dos cookies de Chrome estão no SO Windows.        |
-|   FIRST_RUN   | Boolean  |                          Indicate to bot the first run                           |                |
+|      CONTACT       | String  |                                        The Contact name                                        | Avoid names with emoticons<br/>(if you do,<br/> inspect the HTML element and copy it) |
+|  MESSAGE_OR_FILE   | Boolean |  If 'false' it will send the repeated message<br/>If 'true'  it will send line by line of text file  |                                                ---                                                 |
+| AMOUNT_OF_MESSAGES | Number  |                             The amout of messages you wish to send repeatedly                              |                  **Just** aplly when MESSAGE_OR_FILE<br/>is 'false'                   |
+|      MESSAGE       | String  |                                    The Message you wish to send                                    |                  **Just**  apply when MESSAGE_OR_FILE<br/>is 'false'                  |
+|     FILE_PATH      | String  | The '.txt' file path (it must have<br/>break lines to break message on different parts) |             **Recommended:** keep the existing file<br/> and just change its content             |
+|   DELAY_TO_SEND    | Number  |                           The delay between messages in 'ms'                            |                                   Apply in **all** cases                                   |
+|    BROWSER_PATH    | String  |                         Your Favorite Browser path                         |              **Default:** Chrome path on most of Windows PCs              |
+|   USER_DATA_PATH   | String  |                          Your Favorite Browser's cookies path                          |        **Default:** Chrome's Cookies path on most of Windows PCs.        |
+|   FIRST_RUN   | Boolean  |                          Indicate to bot the first run when you open the App                          |         ---       |
 
 ## Tech Stack
 
