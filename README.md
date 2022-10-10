@@ -41,7 +41,9 @@ If you're in Windows, just open the **whatsappbot.bat**
 
 WhatsApp Bot save your last submit in **config.json**
 
-I **do not** recommend to manually write this file, except to resolve the Error: TODO
+I **do not** recommend to manually write this file, except to resolve the Error:
+<br/><br/>
+```Failed to launch the browser process! spawn C:\Program Files\Google\Chrome\Application\chrome.exe ENOENT```
 Variables      |  Type   |                                            Description                                            |                                            Observations                                             |
 | :----------------: | :-----: | :---------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
 |      CONTACT       | String  |                                        The Contact name                                        | Avoid names with emoticons<br/>(if you do,<br/> inspect the HTML element and copy it) |
@@ -53,6 +55,12 @@ Variables      |  Type   |                                            Descriptio
 |    BROWSER_PATH    | String  |                         Your Favorite Browser path                         |              **Default:** Chrome path on most of Windows PCs              |
 |   USER_DATA_PATH   | String  |                          Your Favorite Browser's cookies path                          |        **Default:** Chrome's Cookies path on most of Windows PCs.        |
 |   FIRST_RUN   | Boolean  |                          Indicate to bot the first run when you open the App                          |         ---       |
+
+If you're facing this **Error:**
+<br/><br/>
+```Failed to launch the browser process! spawn C:\Program Files\Google\Chrome\Application\chrome.exe ENOENT```
+
+Change manually your BROWSER_PATH in config.json to your favorite browser.exe path
 
 ## Tech Stack
 
