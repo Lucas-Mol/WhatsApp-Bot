@@ -1,5 +1,7 @@
 const { ipcRenderer } = require('electron');
 
+var config = readJson('./config.json');
+
 const headerDescription = document.querySelector('.header p');
 const chatBalloon = document.querySelector('.chat-ballon');
 
@@ -50,9 +52,9 @@ mainForm.addEventListener('submit', (event) => {
         AMOUNT_OF_MESSAGES: amountOfMessageInput.value,
         MESSAGE: messageInput.value,
         DELAY_TO_SEND: delayInput.value,
-        FILE_PATH: ".\\transcript.txt",
-        BROWSER_PATH: "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-        USER_DATA_PATH: "%userprofile%\\AppData\\Local\\Google\\Chrome\\User Data\\AllowCookies",
+        FILE_PATH: config.FILE_PATH,
+        BROWSER_PATH: config.BROWSER_PATH,
+        USER_DATA_PATH: config.USER_DATA_PATH,
         FIRST_RUN: false
     }
 
@@ -61,7 +63,7 @@ mainForm.addEventListener('submit', (event) => {
     ipcRenderer.send('renderer/submit', submitJsonContent, submitTextContent);
 
     event.preventDefault();
-});
+}, config);
 
 ipcRenderer.on('main/submit', (event, message) => {
     if(message.status === 200)
