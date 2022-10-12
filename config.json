@@ -7,5 +7,5 @@
     "FILE_PATH": ".\\transcript.txt",
     "BROWSER_PATH": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "USER_DATA_PATH": "%userprofile%\\AppData\\Local\\Google\\Chrome\\User Data\\AllowCookies",
-    "FIRST_RUN": false
+    "FIRST_RUN": true
 }
